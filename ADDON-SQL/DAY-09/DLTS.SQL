@@ -31,3 +31,13 @@ mysql> select*from dlts where department='marketing';
 |     2 | mani   |  20000 | marketing  | 2023-05-09 |
 |     3 | sahana |  40000 | marketing  | 2023-09-04 |
 +-------+--------+--------+------------+------------+
+mysql> update dlts set name='abitha' where name='abinaya';
+mysql> select*from dlts;
++-------+--------+--------+------------+------------+
+| empid | name   | salary | department | joindate   |
++-------+--------+--------+------------+------------+
+|     1 | abitha |  30000 | maths      | 2023-06-13 |
+|     2 | mani   |  20000 | marketing  | 2023-05-09 |
+|     3 | sahana |  40000 | marketing  | 2023-09-04 |
+|     4 | rishi  |  35000 | finance    | 2023-08-08 |
++-------+--------+--------+------------+------------+
