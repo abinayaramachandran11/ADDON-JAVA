@@ -63,3 +63,14 @@ mysql> select*from stf;
 |          3 | sahana |  40000 | marketing  | 2023-09-04 |
 |          4 | rishi  |  35000 | finance    | 2023-08-08 |
 +------------+--------+--------+------------+------------+
+
+mysql> delete from stf
+    -> where name='mani';
+mysql> select*from stf;
++------------+--------+--------+------------+------------+
+| employeeid | name   | salary | department | joindate   |
++------------+--------+--------+------------+------------+
+|          1 | abitha |  30000 | maths      | 2023-06-13 |
+|          3 | sahana |  40000 | marketing  | 2023-09-04 |
+|          4 | rishi  |  35000 | finance    | 2023-08-08 |
++------------+--------+--------+------------+------------+
