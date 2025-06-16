@@ -53,10 +53,10 @@ mysql> select*from stf;
 +-------+--------+--------+------------+------------+
 
  alter table stf
-    -> rename column empid to employee_id;
+    -> rename column name to empname;
 mysql> select*from stf;
 +------------+--------+--------+------------+------------+
-| employee_id | name   | salary | department | joindate   |
+|  empid     | empname| salary | department | joindate   |
 +------------+--------+--------+------------+------------+
 |          1 | abitha |  30000 | maths      | 2023-06-13 |
 |          2 | mani   |  20000 | marketing  | 2023-05-09 |
