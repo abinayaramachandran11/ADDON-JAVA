@@ -84,3 +84,11 @@ mysql> select*from dlts order by salary desc;
 |     1 | abitha  | maths      |  30000 | 2023-06-13 |
 |     2 | mani    | marketing  |  20000 | 2023-05-09 |
 +-------+---------+------------+--------+------------+
+
+mysql> select*from dlts where department ='marketing' AND salary <45000;
++-------+--------+------------+--------+------------+
+| empid | name   | department | salary | joindate   |
++-------+--------+------------+--------+------------+
+|     2 | mani   | marketing  |  25000 | 2023-05-09 |
+|     3 | sahana | marketing  |  40000 | 2023-09-04 |
++-------+--------+------------+--------+------------+
