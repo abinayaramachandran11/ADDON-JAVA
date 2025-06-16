@@ -1,6 +1,4 @@
 create database dtls;
-Query OK, 1 row affected (0.03 sec)
-
 mysql> use dtls;
 Database changed
 mysql> create table dlts(
@@ -24,6 +22,7 @@ mysql> select*from dlts;
 |     3 | sahana  |  40000 | marketing  | 2023-09-04 |
 |     4 | rishi   |  35000 | finance    | 2023-08-08 |
 +-------+---------+--------+------------+------------+
+
 mysql> select*from dlts where department='marketing';
 +-------+--------+--------+------------+------------+
 | empid | name   | salary | department | joindate   |
@@ -41,6 +40,7 @@ mysql> select*from dlts;
 |     3 | sahana |  40000 | marketing  | 2023-09-04 |
 |     4 | rishi  |  35000 | finance    | 2023-08-08 |
 +-------+--------+--------+------------+------------+
+
 mysql> rename table dlts to stf;
 mysql> select*from stf;
 +-------+--------+--------+------------+------------+
@@ -51,3 +51,15 @@ mysql> select*from stf;
 |     3 | sahana |  40000 | marketing  | 2023-09-04 |
 |     4 | rishi  |  35000 | finance    | 2023-08-08 |
 +-------+--------+--------+------------+------------+
+
+ alter table stf
+    -> rename column empid to employee_id;
+mysql> select*from stf;
++------------+--------+--------+------------+------------+
+| employee_id | name   | salary | department | joindate   |
++------------+--------+--------+------------+------------+
+|          1 | abitha |  30000 | maths      | 2023-06-13 |
+|          2 | mani   |  20000 | marketing  | 2023-05-09 |
+|          3 | sahana |  40000 | marketing  | 2023-09-04 |
+|          4 | rishi  |  35000 | finance    | 2023-08-08 |
++------------+--------+--------+------------+------------+
