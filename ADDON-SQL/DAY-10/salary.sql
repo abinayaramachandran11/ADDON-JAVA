@@ -82,3 +82,12 @@ mysql> select name
 | mani  |
 | rishi |
 +-------+
+
+mysql> select name
+    -> from dlts
+    -> where name like 'm__i';
++------+
+| name |
++------+
+| mani |
++------+
