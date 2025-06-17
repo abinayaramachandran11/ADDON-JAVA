@@ -55,3 +55,11 @@ mysql> select name
 | abinaya |
 +---------+
 
+mysql> select name
+    -> from dlts
+    -> where name like 'a%';
++---------+
+| name    |
++---------+
+| abinaya |
++---------+
