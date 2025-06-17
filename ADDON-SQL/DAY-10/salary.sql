@@ -45,4 +45,13 @@ mysql> select name,salary,salary*12
 | sahana  |  40000 |    480000 |
 | rishi   |  35000 |    420000 |
 +---------+--------+-----------+
+    
+mysql> select name
+    -> from dlts
+    -> where department='maths';
++---------+
+| name    |
++---------+
+| abinaya |
++---------+
 
