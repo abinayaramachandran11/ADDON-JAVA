@@ -84,10 +84,24 @@ mysql> select name
 +-------+
 
 mysql> select name
-    -> from dlts
+    -> from dtls
     -> where name like 'm__i';
 +------+
 | name |
 +------+
 | mani |
 +------+
+
+mysql> select name,salary
+    -> from dtls
+    -> where salary like '_____';
++---------+--------+
+| name    | salary |
++---------+--------+
+| abinaya |  30000 |
+| mani    |  25000 |
+| sahana  |  40000 |
+| rishi   |  35000 |
++---------+--------+
+
+
