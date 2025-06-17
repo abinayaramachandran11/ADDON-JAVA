@@ -157,3 +157,40 @@ mysql> select name,joindate
 | rishi   | 2023-08-08 |
 +---------+------------+
 
+mysql> select count(*)
+    -> from dtls
+    -> where salary < 50000 and empid = 1;
++----------+
+| count(*) |
++----------+
+|        1 |
++----------+
+
+mysql> select sum(salary)
+    -> from dtls
+    -> where department ='maths';
++-------------+
+| sum(salary) |
++-------------+
+|       30000 |
++-------------+
+
+mysql> select sum(salary)
+    -> from dtls
+    -> where department='marketing' group by name;
++-------------+
+| sum(salary) |
++-------------+
+|       25000 |
+|       40000 |
++-------------+
+
+
+mysql> select avg(salary),sum(salary),max(salary)
+    -> from dtls
+    -> where department = 'maths';
++-------------+-------------+-------------+
+| avg(salary) | sum(salary) | max(salary) |
++-------------+-------------+-------------+
+|  30000.0000 |       30000 |       30000 |
++-------------+-------------+-------------+
