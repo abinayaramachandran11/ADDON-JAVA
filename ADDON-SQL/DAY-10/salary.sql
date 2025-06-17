@@ -194,3 +194,13 @@ mysql> select avg(salary),sum(salary),max(salary)
 +-------------+-------------+-------------+
 |  30000.0000 |       30000 |       30000 |
 +-------------+-------------+-------------+
+
+mysql> select count(*),department
+    -> from dtls
+    -> group by department
+    -> having count(*)>=2;
++----------+------------+
+| count(*) | department |
++----------+------------+
+|        2 | marketing  |
++----------+------------+
