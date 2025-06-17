@@ -1,5 +1,29 @@
-mysql> select salary
-    -> from dlts
+create database dtls;
+mysql> use dtls;
+Database changed
+mysql> create table dtls(
+    -> empid int primary key,
+    -> name varchar(25),
+    -> salary int,
+    -> department varchar(25),
+    -> joindate date
+    -> );
+mysql> insert into dtls(empid,name,salary,department,joindate) values
+    -> (1,'abinaya',30000,'maths','2023-06-13'),
+    -> (2,'mani',25000,'marketing','2023-05-09'),
+    -> (3,'sahana',40000,'marketing','2023-09-04'),
+    -> (4,'rishi',35000,'finance','2023-08-08');
+mysql> select*from dtls;
++-------+---------+--------+------------+------------+
+| empid | name    | salary | department | joindate   |
++-------+---------+--------+------------+------------+
+|     1 | abinaya |  30000 | maths      | 2023-06-13 |
+|     2 | mani    |  25000 | marketing  | 2023-05-09 |
+|     3 | sahana  |  40000 | marketing  | 2023-09-04 |
+|     4 | rishi   |  35000 | finance    | 2023-08-08 |
++-------+---------+--------+------------+------------+
+    mysql> select salary
+    -> from dtls
     -> where salary >20000;
 +--------+
 | salary |
@@ -11,7 +35,7 @@ mysql> select salary
 +--------+
 
 mysql> select name,salary,salary*12
-    -> from dlts
+    -> from dtls
     -> where salary*12 >=12000;
 +---------+--------+-----------+
 | name    | salary | salary*12 |
