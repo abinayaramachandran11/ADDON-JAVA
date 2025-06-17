@@ -104,4 +104,14 @@ mysql> select name,salary
 | rishi   |  35000 |
 +---------+--------+
 
+mysql> select name,salary
+    -> from dlts
+    -> where name not like 'r___i';
++---------+--------+
+| name    | salary |
++---------+--------+
+| abinaya |  30000 |
+| mani    |  25000 |
+| sahana  |  40000 |
++---------+--------+
 
