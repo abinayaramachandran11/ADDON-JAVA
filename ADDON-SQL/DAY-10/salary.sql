@@ -72,3 +72,13 @@ mysql> select name
 +--------+
 | sahana |
 +--------+
+
+mysql> select name
+    -> from dtls
+    -> where name like '%i';
++-------+
+| name  |
++-------+
+| mani  |
+| rishi |
++-------+
