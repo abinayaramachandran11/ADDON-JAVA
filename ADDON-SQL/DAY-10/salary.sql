@@ -47,7 +47,7 @@ mysql> select name,salary,salary*12
 +---------+--------+-----------+
     
 mysql> select name
-    -> from dlts
+    -> from dtls
     -> where department='maths';
 +---------+
 | name    |
@@ -56,10 +56,19 @@ mysql> select name
 +---------+
 
 mysql> select name
-    -> from dlts
+    -> from dtls
     -> where name like 'a%';
 +---------+
 | name    |
 +---------+
 | abinaya |
 +---------+
+
+mysql> select name
+    -> from dtls
+    -> where name like 's%a';
++--------+
+| name   |
++--------+
+| sahana |
++--------+
