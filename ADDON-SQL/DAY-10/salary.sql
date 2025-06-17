@@ -126,3 +126,34 @@ mysql> select name
 | sahana  |   |
 +---------+
 
+mysql> select name
+    -> from dtls
+    -> where empid not in(2,4);
++---------+
+| name    |
++---------+
+| abinaya |
+| sahana  |
++---------+
+
+mysql> select name
+    -> from dtls
+    -> where joindate > '2023-06-13';
++--------+
+| name   |
++--------+
+| sahana |
+| rishi  |
++--------+
+
+mysql> select name,joindate
+    -> from dtls
+    -> where joindate between '2023-06-13' and '2023-09-04';
++---------+------------+
+| name    | joindate   |
++---------+------------+
+| abinaya | 2023-06-13 |
+| sahana  | 2023-09-04 |
+| rishi   | 2023-08-08 |
++---------+------------+
+
