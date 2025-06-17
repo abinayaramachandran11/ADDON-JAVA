@@ -105,7 +105,7 @@ mysql> select name,salary
 +---------+--------+
 
 mysql> select name,salary
-    -> from dlts
+    -> from dtls
     -> where name not like 'r___i';
 +---------+--------+
 | name    | salary |
@@ -114,4 +114,15 @@ mysql> select name,salary
 | mani    |  25000 |
 | sahana  |  40000 |
 +---------+--------+
+
+mysql> select name
+    -> from dtls
+    -> where empid =1 or empid =2 or empid=3;
++---------+
+| name    |
++---------+
+| abinaya |
+| mani    |
+| sahana  |   |
++---------+
 
