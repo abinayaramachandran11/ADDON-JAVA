@@ -1,23 +1,14 @@
-mysql> create table Course(
+TASK 1
+    mysql> create table Course(
     -> Coursefee int
     -> );
-Query OK, 0 rows affected (0.04 sec)
-
 mysql> insert into course values(10000);
-Query OK, 1 row affected (0.01 sec)
-
 mysql> insert into course values(20000);
-Query OK, 1 row affected (0.01 sec)
-
 mysql> insert into course values(30000);
-Query OK, 1 row affected (0.01 sec)
-
 mysql> insert into course values(40000);
-Query OK, 1 row affected (0.01 sec)
-
 mysql> insert into course values(50000);
-Query OK, 1 row affected (0.01 sec)
 
+TASK 2
 mysql> select*
     -> from course;
 +-----------+
@@ -29,7 +20,8 @@ mysql> select*
 |     40000 |
 |     50000 |
 +-----------+
-
+    
+TASK 3
 mysql> update course
     -> set coursefee=60000
     -> where coursefee=50000;
