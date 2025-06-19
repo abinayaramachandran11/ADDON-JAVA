@@ -1,3 +1,6 @@
+TASK 2
+List courses by ascending fees?
+    
 mysql> use stdfees
 Database changed
 mysql> create table stdfees(
