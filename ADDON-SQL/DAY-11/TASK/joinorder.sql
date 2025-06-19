@@ -1,3 +1,6 @@
+TASK 3
+ Join Order and Customers?
+ 
  create table orders(
     -> orderid int,
     -> customername varchar(50),
@@ -45,4 +48,3 @@ select*from orders cross join customers;
 |     102 | Abi          |    600 |    3 | Canada        |
 |     101 | Rubi         |    550 |    3 | Canada        |
 +---------+--------------+--------+------+---------------+
-9 rows in set (0.00 sec)
