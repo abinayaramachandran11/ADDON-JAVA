@@ -4,11 +4,11 @@ public class JdbcMain {
 			public static void main(String[] args) throws Exception {
 				String url="jdbc:mysql://localhost:3306/ stdmark";
 				String username="root";
-				String password="";
+				String password="Kgisl@123";
 			Connection connect = DriverManager.getConnection(url, username, password);
 				System.out.println("Driver Loaded");
 				Statement st = connect.createStatement();
-				String sql="select*from emp";
+				String sql="select*from stdmark";
 		        ResultSet rs = st.executeQuery(sql);
 		        while(rs.next()) {
 		        rs.next();
