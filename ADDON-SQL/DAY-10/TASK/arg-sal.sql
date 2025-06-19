@@ -1,4 +1,7 @@
-CREATE TABLE Employee (
+TASK 2
+Average salary by department?
+  
+  CREATE TABLE Employee (
   EmpId int,
   Ename varchar(15),
   Edept varchar(10),
