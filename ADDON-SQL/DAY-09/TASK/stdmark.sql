@@ -1,3 +1,6 @@
+TASK 1
+    Fetch students with >80 marks?
+    
 mysql> use stdmark
 Database changed
 mysql> create table stdmark(
