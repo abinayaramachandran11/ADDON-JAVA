@@ -1,5 +1,7 @@
+TASK 2
+ Simple interest calculator using if?
+    
 import java.util.Scanner;
-
 public class SimpleInterestCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
