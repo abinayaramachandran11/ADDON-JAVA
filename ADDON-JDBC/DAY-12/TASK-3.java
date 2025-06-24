@@ -6,8 +6,8 @@ public static void main(String[] args) throws Exception {
 		String user = "root";
 		String password = "ksql@";
 		int rollNo = 103723;
-		String name = "keerthana";
-		String email = "keerthana1723@gmail.com";
+		String name = "Abinaya";
+		String email = "abinaya11@gmail.com";
 		String phone = "1234567891";
 		String dept = "CT";
 		String course = "Computer Technology";
