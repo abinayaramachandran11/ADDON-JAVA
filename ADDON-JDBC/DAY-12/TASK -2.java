@@ -11,7 +11,6 @@ public class Task2 {
 		String phone = "1234567891";
 		String dept = "CT";
 		String course = "Computer Technology";
-             // String query = "Create table students(studname varchar(50),studrollno int,studemail varchar(50),studphno int,studdept varchar(40),course varchar(50))";
 		String query1 = "INSERT INTO Students (studrollno, studname, studemail, studphno, studdept, course) VALUES (?, ?, ?, ?, ?, ?)";
 		Connection conn = DriverManager.getConnection(url, user, password);
 		PreparedStatement stmt = conn.prepareStatement(query1);
